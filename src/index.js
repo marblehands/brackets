@@ -14,10 +14,10 @@ module.exports = function check(str, bracketsConfig) {
     // console.log(isClosingBracket)
 
     if (isClosingBracket && isOpeningBracket) {
-      if ( arr.length > 0 && arr[arr.length - 1] === '$') {
+      if ( arr.length > 0 && arr[arr.length - 1] === `${bracket}$`) {
         arr.pop()
       } else {
-        arr.push('$');
+        arr.push(`${bracket}$`);
       }
       // console.log('test')
       // console.log(arr)
